@@ -1,0 +1,93 @@
+# Fichiers à ignorer par Git
+
+# === ESP32 / PlatformIO ===
+ESP32/.pio/
+ESP32/.platformio/
+ESP32/build/
+ESP32/dist/
+ESP32/.vscode/c_cpp_properties.json
+ESP32/.vscode/launch.json
+ESP32/.vscode/settings.json
+ESP32/*.o
+ESP32/*.elf
+ESP32/*.hex
+
+# === Node.js / npm ===
+WebServer/backend/node_modules/
+WebServer/backend/dist/
+WebServer/backend/.env
+WebServer/backend/.env.local
+WebServer/backend/.env.*.local
+WebServer/frontend/node_modules/
+WebServer/frontend/dist/
+WebServer/frontend/.env
+WebServer/frontend/.env.local
+WebServer/frontend/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Python ===
+WebServer/backend/__pycache__/
+WebServer/backend/.venv/
+WebServer/backend/venv/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === Database / Docker ===
+postgres_data/
+WebServer/data/
+.env.db
+
+# === IDEs / Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local
+
+# === OS ===
+.DS_Store
+Thumbs.db
+*.log
+
+# === Build outputs ===
+build/
+dist/
+out/
+*.o
+*.a
+
+# === Credentials (JAMAIS commit!) ===
+.env
+.env.*.local
+secrets/
+*.key
+*.pem
+API_KEYS.txt
+.env.production
+
+# === IDE config (souvent local-specific) ===
+.vscode/settings.json
+.idea/workspace.xml
+.vscode/launch.json
+
+# === Testing ===
+coverage/
+*.lcov
+.nyc_output/
+
+# === Temporary ===
+tmp/
+temp/
+*.tmp
+
+# === Prisma ===
+WebServer/backend/prisma/*.db
+WebServer/backend/prisma/*.db-journal
